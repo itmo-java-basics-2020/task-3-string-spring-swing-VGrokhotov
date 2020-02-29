@@ -73,7 +73,7 @@ public class Task3 {
         if (input == null || input.isEmpty())
             return 0;
 
-        var str = input.toCharArray();
+        char[] str = input.toCharArray();
         int result = 0;
         for (char letter: str) {
             if (letter == 'b' || letter == 'B' || letter == 'a' || letter == 'A'){
@@ -91,7 +91,7 @@ public class Task3 {
         if (input == null)
             return false;
 
-        var str = input.toCharArray();
+        char[] str = input.toCharArray();
         for (int i = 0; i < str.length/2; i++) {
             if (str[i] != str[str.length - 1 - i])
                 return false;
@@ -138,8 +138,8 @@ public class Task3 {
         if (one == null || two == null || one.isEmpty() ||one.length() != two.length())
             return false;
 
-        var str1 = one.toCharArray();
-        var str2 = two.toCharArray();
+        char[] str1 = one.toCharArray();
+        char[] str2 = two.toCharArray();
         Arrays.sort(str1);
         Arrays.sort(str2);
 

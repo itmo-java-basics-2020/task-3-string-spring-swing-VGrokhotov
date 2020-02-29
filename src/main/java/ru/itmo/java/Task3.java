@@ -36,6 +36,8 @@ public class Task3 {
             return 0;
         if (inputArray.length == 1)
             return inputArray[0];
+        if (inputArray.length == 2)
+            return inputArray[0] * inputArray[1];
         int negativeMax = 0;
         int negativeNextMax = 0;
         int max = -1;
